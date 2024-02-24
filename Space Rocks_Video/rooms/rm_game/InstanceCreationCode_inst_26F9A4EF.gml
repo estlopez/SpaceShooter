@@ -1,0 +1,1 @@
+draw_text_transformed(500,500, Creation_test,1,1, image_angle);
