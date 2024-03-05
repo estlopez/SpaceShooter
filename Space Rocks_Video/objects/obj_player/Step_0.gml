@@ -34,3 +34,4 @@ if is_shooting == true
 		alarm_set(1,Shot_Rate);
 	}
 }
+
