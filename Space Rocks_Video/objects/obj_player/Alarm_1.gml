@@ -2,32 +2,35 @@
 
 if obj_game.powerup_meter >= 10
 {
-	shoot();
-	powerup_1();
+	//shoot();
+	//powerups[1]();
+	current_shot = powerups[1]();
 }
 
 if obj_game.powerup_meter >= 20
 {
-	shoot();
-	powerup_2();
+	//shoot();
+	current_shot = powerups[21]();
 }
 
 if obj_game.powerup_meter >= 60
 {
-	shoot();
-	powerup_3();
+	//shoot();
+	current_shot = powerups[3]();
 }
 
 if obj_game.powerup_meter >= 120
 {
-	shoot();
-	powerup_4();
+	//shoot();
+	current_shot = powerups[4]();
 }
 
 else
 {
-	shoot();
+	powerup_0();
 }
+
+
 
 	
 

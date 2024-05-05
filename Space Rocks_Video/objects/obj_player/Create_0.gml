@@ -3,12 +3,14 @@
 is_shooting = false;
 powerup = 0;
 Creation_test = "This is a test";
+current_shot = powerup_0();
 
 
-function shoot()
+
+function powerup_0()
 {
+	var _bullet = instance_create_layer(x, y, "Instances", obj_bullet)
 	instance_create_layer(x, y,"Instances", obj_bullet);
-	audio_play_sound(snd_shoot, 0, false, .1, 0, random_range(0.8, 1.2));
 }
 
 function powerup_1()
@@ -34,5 +36,12 @@ function powerup_4()
 	Shot_Size = 2;
 }
 
+//powerups = [powerup_0(), powerup_1(), powerup_2(), powerup_3(), powerup_4()];
+//current_shot = powerup_0();
 
-
+shoot = function()
+{
+	current_shot();
+	audio_play_sound(snd_shoot, 0, false, .1, 0, random_range(0.8, 1.2));
+	return 0;
+}

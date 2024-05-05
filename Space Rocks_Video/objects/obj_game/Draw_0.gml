@@ -7,6 +7,11 @@ draw_text_transformed(755, 60, powerup_meter, 1, 1, image_angle)
 
 
 
+if (points >= 10000)
+	layer_background_blend(Back_Layer, c_maroon)
+if (points >= 15000)
+	layer_background_blend(Back_Layer, c_orange)
+
 
 
 

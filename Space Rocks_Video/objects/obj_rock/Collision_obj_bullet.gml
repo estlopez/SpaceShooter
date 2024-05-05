@@ -25,6 +25,8 @@ else
 obj_game.powerup_meter += .5;
 obj_game.points += 50;
 
+
+
 audio_play_sound(snd_rockdestroy, 0, false,.1);
 
 
