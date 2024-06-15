@@ -19,8 +19,9 @@ if keyboard_check(vk_right)
 // Autofire logic
 if mouse_check_button_pressed(mb_left)
 {
+	alarm_set(1,1)
 	is_shooting = true;
-	shoot();
+	//shoot();
 }
 else if mouse_check_button_released(mb_left)
 {
@@ -30,9 +31,11 @@ else if mouse_check_button_released(mb_left)
 
 if is_shooting == true
 {
+	
 	if alarm_get(1) <= 0
 	{
 		alarm_set(1,Shot_Rate);
+		
 	}
 }
 

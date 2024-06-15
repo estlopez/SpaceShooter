@@ -3,45 +3,18 @@
 is_shooting = false;
 powerup = 0;
 Creation_test = "This is a test";
-current_shot = powerup_0();
 
 
 
-function powerup_0()
-{
-	var _bullet = instance_create_layer(x, y, "Instances", obj_bullet)
-	instance_create_layer(x, y,"Instances", obj_bullet);
-}
 
-function powerup_1()
-{
-	var _bullet = instance_create_layer(x, y, "Instances", obj_bullet)
-	_bullet.direction += 10;
-	_bullet = instance_create_layer(x,y, "Instances", obj_bullet)
-	_bullet.direction -= 10;
-}
 
-function powerup_2()
-{
-	Shot_Speed = 15;
-}
 
-function powerup_3()
-{
-	Shot_Rate = 18;
-}
 
-function powerup_4()
-{
-	Shot_Size = 2;
-}
 
-//powerups = [powerup_0(), powerup_1(), powerup_2(), powerup_3(), powerup_4()];
-//current_shot = powerup_0();
 
-shoot = function()
-{
-	current_shot();
-	audio_play_sound(snd_shoot, 0, false, .1, 0, random_range(0.8, 1.2));
-	return 0;
-}
+
+
+
+
+
+
